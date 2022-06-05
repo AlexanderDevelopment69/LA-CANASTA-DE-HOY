@@ -1,5 +1,5 @@
 {
-  let url =  'http://app-cliente.dev.lacanastadehoy.com/public/api/Portada-get/1'
+  let url =  'http://20.90.112.182:8081/api/Portada-get/1'
   fetch(url)
       .then(response=>response.json())
       .then(data=>mostrarData(data))
@@ -25,7 +25,7 @@
 
 
 {
-  let url =  'http://localhost/la-canasta-de-hoy-backend-admin/public/api/Portada-get/2'
+  let url =  'http://20.90.112.182:8081/api/Portada-get/2'
   fetch(url)
       .then(response=>response.json())
       .then(data=>mostrarData(data))
