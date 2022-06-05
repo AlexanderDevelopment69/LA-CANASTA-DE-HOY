@@ -1,0 +1,252 @@
+:root{
+  --crema: #FDF0D5;
+  --verde: #2AAD8A;
+  --naranja: #FCB72F;
+  --guindo: #481C1D;
+  --naranja2: #EE834F;
+}
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+} */
+
+/* ***************** Navbar */
+
+
+
+/* ** carrito de compras */
+
+#carrito-compras{
+  position: relative;
+
+}
+
+#carrito-compras #counter{
+  background-color: var(--verde);
+  color:white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  position: absolute;
+  right: -11px;
+  bottom: -9px;
+}
+
+/* ***************************************** main */
+main section{
+  padding: 36px 24px;
+}
+
+/* ************ panel section */
+.panel-section{
+  background-image: url('../images/comidas/panel-entradas.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.panel-section h2{
+  color: white;
+  text-align: center;
+  margin-block-end: 40px;
+}
+
+.panel-section .buscador{
+  background-color: rgba(255, 255, 255, 24%);
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+  margin-block-end: 40px;
+  width: 90%;
+}
+
+.panel-section .buscador input{
+  background: none;
+  border: none;
+}
+
+.panel-section .buscador img{
+  width: 20px;
+  position: absolute;
+  left: 16px;
+}
+
+.panel-section button{
+  background-color: rgba(14, 14, 14, 68%);
+  border: none;
+  color: white;
+  border-radius: 24px;
+  padding: 16px 40px;
+}
+
+/* ****************** plato section */
+.plato-section{
+  position: relative;
+}
+.plato-section h2{
+  text-align: center;
+  margin-block-end: 24px;
+}
+.plato-section>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.plato-section>div picture{
+  margin-block-end: 24px;
+}
+.plato-section>div picture img{
+  width: 100%;
+  border-radius: 16px;
+}
+
+.plato-section>div .infoplato-container{
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plato-section>div .infoplato-container .btnporciones{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: var(--crema);
+  border-radius: 8px;
+  margin: 16px 0;
+}
+.plato-section>div .infoplato-container .btnporciones div{
+  background-color: var(--naranja);
+  height: 100%;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.plato-section>div .infoplato-container .btnporciones .signomas{
+  border-radius: 8px 0 0 8px;
+}
+.plato-section>div .infoplato-container .btnporciones .signomenos{
+  border-radius: 0 8px 8px 0;
+}
+
+.plato-section>div .infoplato-container .btnagregar{
+  background-color: var(--verde);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-block-end: 36px;
+}
+.plato-section>div .infoplato-container .btnagregar img{
+  width: 24px;
+  margin-inline-start: 12px;
+}
+
+.plato-section>div .infoplato-container .descripcion-container h3{
+  text-align: center;
+  margin-block-end: 16px;
+}
+.plato-section>div .infoplato-container .descripcion-container p{
+    text-align: justify;
+    margin-block-end: 16px;
+}
+
+.plato-section .esquina1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+}
+
+/* ******************** ingredientes section */
+.ingredientes-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredientes-section h2{
+    margin-block-end: 24px;
+}
+
+.ingredientes-section .lateral61{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 240px;
+    display: none;
+}
+
+.ingredientes-section .tabla-ingredientes{
+    border-collapse: separate;
+    border-spacing: 50px 30px;
+}
+
+/
+
+/* ********************************** RESPONSIVE DESIGN */
+
+@media (min-width: 800px) {
+  body{
+    font-size: 20px;
+  }
+  main section{
+    padding: 64px;
+  }
+  .ingredientes-section .lateral61{
+    display: inline;
+  }
+  .panel-section .buscador{
+    width: 60%;
+  }
+  .plato-section > div{
+    flex-direction: row;
+  }
+  .plato-section>div picture{
+    order: 3;
+  }
+  .plato-section>div .infoplato-container{
+    width: 60%;
+    margin-inline-end: 36px;
+  }
+  .plato-section .esquina1{
+    width: 240px;
+  }
+  .ingredientes-section .lateral61{
+    display: inline;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .panel-section .buscador{
+    width: 40%;
+  }
+}

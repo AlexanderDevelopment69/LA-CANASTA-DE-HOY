@@ -1,0 +1,224 @@
+:root{
+    --crema: #FDF0D5;
+    --verde: #2AAD8A;
+    --naranja: #FCB72F;
+    --guindo: #481C1D;
+    --naranja2: #EE834F;
+  }
+
+  /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+  /* body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  } */
+
+
+
+  /* ** carrito de compras */
+
+  #carrito-compras{
+    position: relative;
+
+  }
+
+  #carrito-compras #counter{
+    background-color: var(--verde);
+    color:white;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    position: absolute;
+    right: -11px;
+    bottom: -9px;
+  }
+
+  /* ****************************************main */
+  main section{
+    padding: 24px;
+  }
+
+/* ************************************ meses */
+.titulo{
+    background-color: #FDF0D5;
+    color:#FF3B19;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.meses.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu{
+  width: 100%;
+  background: #FDF0D5;
+  text-align: center;
+  position: relative;
+}
+
+.menu ul{
+  list-style: none;
+}
+
+.menu ul li{
+  display: inline-block;
+  padding: 20px;
+  transition: all .3s ease;
+}
+
+.menu ul li:hover{
+  transform: scale(1.2);
+  background-color: #481C1D;
+}
+
+.menu ul li a{
+  color: #FF3B19;
+  text-decoration: none;
+}
+
+.productos-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.productos{
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor:pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: .4s;
+  background: #ddd;
+}
+
+.productos:hover{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+  0 3px 6px rgba(0,0,0,0.23);
+}
+
+.productos img{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.productos .h3{
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+  color: pink;
+}
+
+.productos.h6{
+  font-size: 26px;
+  text-align: center;
+  color: #222f3e;
+  margin: 0;
+}
+
+.botoncalendario{
+  margin-top: 50px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.botoncalendario button{
+  color: #fff;
+  background-color: #FF3B19;
+  border-radius: 12px;
+  font-size: 2em;
+  width: 200px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.contigo{
+    width: 40%;
+    margin: 50px;
+    float: left;
+    text-align: center;
+    border-radius: 80px;
+    cursor:pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .8s;
+    background: #FEF2D8;
+
+}
+.contigo h2{
+  color:#E7BA5E;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.contigo p{
+  font-style: oblique;
+  font-size: .8em;
+}
+.botondescarga{
+  margin-bottom: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+.botondescarga button{
+  margin-top: 4%;
+  color: #fff;
+  background-color: #FF3B19;
+  border-radius: 12px;
+  font-size: 2em;
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+
+  /* ********************************** RESPONSIVE DESIGN */
+  @media (max-width: 600px) {
+    body{
+      font-size: 20px;
+    }
+    main section{
+      padding: 64px;
+    }
+    .titulo{
+      display: flex;
+    }
+
+    .productos-section .productos{
+      width: 80%;
+    }
+
+    }
+
+  @media (min-width: 1000px) {
+
+    main section{
+      padding: 88px;
+    }
+  }

@@ -1,0 +1,159 @@
+/* :root{
+    --crema: #FDF0D5;
+    --verde: #2AAD8A;
+    --naranja: #FCB72F;
+    --guindo: #481C1D;
+    --naranja2: #EE834F;
+  } */
+
+  /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+  /* body{
+    font-family: 'Roboto', sans-serif;
+  } */
+
+  /* ***************** Navbar */
+
+
+  /* ** carrito de compras */
+
+  #carrito-compras{
+    position: relative;
+
+  }
+
+  #carrito-compras #counter{
+    background-color: var(--verde);
+    color:white;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    position: absolute;
+    right: -11px;
+    bottom: -9px;
+  }
+
+  /* ****************************************main */
+  main section{
+    padding: 24px;
+  }
+
+/* ************************************ productores */
+.productores-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.productores-section .cards-container{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 500px;
+  }
+.productores-section .cards-container h1{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+.productores-section .card{
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-block-end: 24px;
+    border-radius: 8px;
+    max-width: 600px;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.productores-section .card img{
+    width: 200px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 5px rgb(216, 216, 216);
+
+  }
+
+.productores-section .card h3{
+    color: rgb(0, 0, 0);
+    margin-block-end: 16px;
+  }
+
+.productores-section .card p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+.productores-section .frutinter{
+    background-color: var(--naranja);
+  }
+
+  .productores-section .cultivar  {
+    position: relative;
+    background-color: var(--verde);
+  }
+
+  .productores-section .nufri{
+    background-color: var(--naranja2);
+  }
+
+
+  .productores-section .carnicos{
+    position: absolute;
+    width: 100px;
+    bottom: 156px;
+    right: 0px;
+  }
+  .productores-section .lateral3-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 124px;
+  }
+
+
+
+
+  /* ********************************** RESPONSIVE DESIGN */
+  @media (min-width: 800px) {
+    body{
+      font-size: 20px;
+    }
+    main section{
+      padding: 64px;
+    }
+    .productores-section .cards-container{
+        width: 80%;
+      }
+
+    .productores-section .lateral3-1{
+        width: 264px;
+      }
+
+    .productores-section .carnicos{
+        width: 164px;
+        bottom: 80%;
+        right: 200px;
+      }
+  }
+
+  @media (min-width: 1000px) {
+    
+
+    main section{
+      padding: 88px;
+    }
+  }

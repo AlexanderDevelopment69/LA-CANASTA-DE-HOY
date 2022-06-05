@@ -1,0 +1,423 @@
+/* :root{
+  --crema: #FDF0D5;
+  --verde: #2AAD8A;
+  --naranja: #FCB72F;
+  --guindo: #481C1D;
+  --naranja2: #EE834F;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+} */
+
+/* ***************** Navbar */
+
+/* header{
+  background-color: var(--crema);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px 0;
+  position: relative;
+} */
+
+/* header ul{
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: var(--crema);
+  padding: 20px;
+  top: 75px;
+  left: 24px;
+}
+header ul li{ */
+  /* margin: 16px;
+} */
+
+/* header ul:nth-child(4){
+  display: none;
+} */
+
+/* header .logo, header .btnmenu,
+header .icono-usuario, #carrito-compras img{
+  width: 36px;
+}
+
+header ul a{
+  color: black;
+  text-decoration: none;
+} */
+
+/* ** carrito de compras */
+
+#carrito-compras{
+  position: relative;
+
+}
+
+#carrito-compras #counter{
+  background-color: var(--verde);
+  color:white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  position: absolute;
+  right: -11px;
+  bottom: -9px;
+}
+
+/* ****************************************main */
+main section{
+  padding: 24px;
+}
+
+/* ********************** quienes somos */
+
+.quienes-somos-section img{
+  width: 100%;
+  margin-block-end: 24px;
+}
+
+.quienes-somos-section h2{
+  margin-block-end: 24px;
+}
+
+.quienes-somos-section p{
+  text-align: justify;
+}
+
+/* *************************** proposito section */
+
+.proposito-section{
+  position: relative;
+  background-color: var(--verde);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proposito-section .vegetales{
+  width: 124px;
+}
+
+.proposito-section h2{
+  color: white;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.proposito-section p{
+  text-align: justify;
+}
+
+.proposito-section .lateral7{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+/* ************************************ valores */
+.valores-section{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valores-section .cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.valores-section .card{
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-block-end: 24px;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+.valores-section .card img{
+  width: 40%;
+  padding-block-end: 24px;
+}
+
+.valores-section .card h3{
+  color: white;
+  margin-block-end: 16px;
+}
+
+.valores-section .card p{
+  color: white;
+  text-align: center;
+}
+
+.valores-section .consumo-consciente{
+  background-color: var(--naranja);
+}
+
+.valores-section .menos-desperdicio{
+  position: relative;
+  background-color: var(--verde);
+}
+
+
+.valores-section .ciencia-ciudadana{
+  background-color: var(--guindo);
+}
+
+.valores-section .equidad-en-el-hogar{
+  background-color: var(--naranja2);
+}
+
+.valores-section .carnicos{
+  position: absolute;
+  width: 100px;
+  bottom: 156px;
+  right: 0px;
+}
+.valores-section .lateral3-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 124px;
+}
+
+/* ****************************** equpo section */
+
+.equipo-section{
+  position: relative;
+  background-color: var(--naranja);
+}
+
+.equipo-section h2{
+  text-align: center;
+  color: white;
+  margin-block-end: 24px;
+}
+
+.equipo-section>div{
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.equipo-section>div h3{
+  margin-block-end: 16px;
+}
+
+.equipo-section>div p{
+  margin-block-end: 16px;
+}
+
+.equipo-section>div .foto-container img{
+  width: 164px;
+  height: 164px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.equipo-section>div .foto-container{
+  margin-block-end: 16px;
+}
+
+.equipo-section>div a img{
+  width: 40px;
+}
+
+.equipo-section .esquina2{
+  position: absolute;
+  top: 450px;
+  left: 0;
+  width: 64px;
+}
+
+.equipo-section .lateral6{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+}
+
+.equipo-section .lateral62{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  transform: rotate(180deg);
+}
+
+.equipo-section .fruta{
+  position: absolute;
+  top: 560px;
+  right: 0;
+  width: 64px;
+}
+
+/* ********************************* footer */
+
+/* footer{
+  background-color: var(--guindo);
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p{
+  color: white;
+  margin-block-end: 24px;
+}
+
+footer .redes-sociales a img{
+  width: 24px;
+  margin-inline-end: 16px;
+}
+
+footer>img{
+  width: 88px;
+} */
+
+
+/* ********************************** RESPONSIVE DESIGN */
+@media (min-width: 800px) {
+  body{
+    font-size: 20px;
+  }
+  main section{
+    padding: 64px;
+  }
+  .quienes-somos-section{
+    display: flex;
+  }
+
+  .quienes-somos-section img{
+    width: 50%;
+    object-fit: cover;
+    margin-inline-end: 40px;
+    margin-block-end: 0;
+  }
+
+  .quienes-somos-section>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .proposito-section .vegetales{
+    width: 180px;
+    margin-inline-end: 100px;
+  }
+  .proposito-section p{
+    text-align: center;
+  }
+  .valores-section .cards-container{
+    width: 80%;
+  }
+
+  .valores-section .lateral3-1{
+    width: 264px;
+  }
+
+  .valores-section .carnicos{
+    width: 164px;
+    bottom: 80%;
+    right: 200px;
+  }
+  .equipo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .equipo-section>div{
+    flex-direction: row;
+    text-align: start;
+    justify-content: space-between;
+  }
+
+  .equipo-section>div>div>p{
+    max-width: 1000px;
+  }
+  .equipo-section>div .foto-container{
+    margin-inline-end: 64px;
+  }
+  .equipo-section>div:nth-child(3) .foto-container{
+    order: 5;
+    margin-inline-end: 0;
+    margin-inline-start: 64px;
+  }
+  .equipo-section>div:nth-child(3){
+    text-align: end;
+  }
+
+  .equipo-section .esquina2{
+    top:16px;
+    width: 120px;
+  }
+  .equipo-section .lateral6, .equipo-section .lateral62{
+    width: 120px;
+  }
+  .equipo-section .fruta{
+    width: 120px;
+    top: 490px;
+    right: 50px;
+  }
+}
+
+/* @media (min-width: 1000px) {
+  header{
+    padding: 24px 64px;
+  }
+  header .btnmenu{
+    display: none;
+  }
+  header>.logo{
+    display: none;
+  }
+
+  header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    background-color: none;
+    padding: 0;
+    top: 0;
+    left: 0;
+  }
+
+  header ul .logo{
+    display: inline;
+  }
+
+  main section{
+    padding: 88px;
+  }
+  .valores-section .card{
+    margin: 24px;
+  }
+  .proposito-section .vegetales{
+    width: 280px;
+  }
+  .proposito-section .lateral7{
+    display: block;
+    width: 180px;
+  }
+} */
