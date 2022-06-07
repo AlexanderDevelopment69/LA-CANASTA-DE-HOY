@@ -11,7 +11,7 @@
         document.getElementById('descripcion').innerHTML = data.descripcion ;
         document.getElementById('subtitulo').innerHTML = data.subtitulo;
         // document.getElementById('imagenAviso').innerHTML = data.url_imagen;
-        document.getElementById('imagenAviso').src="http://app-cliente.dev.lacanastadehoy.com/storage/app/"+data.url_imagen;
+        document.getElementById('imagenAviso').src="http://20.90.112.182:8081/storage/app/"+data.url_imagen;
 
 
 
@@ -35,7 +35,7 @@
         // console.log(data.titulo)
         document.getElementById('tituloBanner').innerHTML = data.titulo;
         document.getElementById('descripcionBanner').innerHTML = data.descripcion;
-        document.getElementById('imagenBanner').style.backgroundImage="url(http://localhost/la-canasta-de-hoy-backend-admin/storage/app/"+data.url_imagen+")";
+        document.getElementById('imagenBanner').style.backgroundImage="url(http://20.90.112.182:8081/la-canasta-de-hoy-backend-admin/storage/app/"+data.url_imagen+")";
 
 
 }
